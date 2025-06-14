@@ -5,13 +5,14 @@
 # --- Biến Cấu hình ---
 DB_NAME="dormitory_management"
 DB_ROOT_PASSWORD="nam1234" # <<< Mật khẩu MySQL root
-GIT_REPO_URL="https://github.com/ngocanh0803/DACS-25-PhanMemQuanLi1.git"
-APP_DIR_NAME="DACS-25-PhanMemQuanLi1"
+GIT_REPO_URL="https://github.com/AdminCNTT/PhanMenQuanLiKTX.git"
+APP_DIR_NAME="PhanMenQuanLiKTX"
 WEB_ROOT="/var/www/html"
 APP_PATH="${WEB_ROOT}/${APP_DIR_NAME}"
 WEBSOCKET_SCRIPT_PATH="${APP_PATH}/php/websocket/server.php"
 WEBSOCKET_LOG_PATH="/var/log/websocket_server.log"
-DB_SQL_URL="https://raw.githubusercontent.com/ngocanh0803/DACS-25-PhanMemQuanLi1/main/assets/database/ktx.sql"
+# DB_SQL_URL="https://raw.githubusercontent.com/ngocanh0803/PhanMenQuanLiKTX/main/assets/database/ktx.sql"
+DB_SQL_URL="https://raw.githubusercontent.com/AdminCNTT/PhanMenQuanLiKTX/refs/heads/main/assets/database/ktx.sql"
 DB_SQL_LOCAL_PATH="/tmp/ktx.sql"
 
 # --- Cập nhật hệ thống và cài đặt các gói cần thiết ---
@@ -128,8 +129,8 @@ echo "Mật khẩu root MySQL đã được đặt thành: ${DB_ROOT_PASSWORD}"
 echo "======================================================================"
 
 
-http://34.226.195.11/DACS-25-PhanMemQuanLi1/php/admin/login.php
+http://34.226.195.11/PhanMenQuanLiKTX/php/admin/login.php
 sudo cat /var/log/cloud-init-output.log
 ls -l /var/www/html/
-ls -l /var/www/html/DACS-25-PhanMemQuanLi1/php/admin/
-ls -ld /var/www/html/DACS-25-PhanMemQuanLi1
+ls -l /var/www/html/PhanMenQuanLiKTX/php/admin/
+ls -ld /var/www/html/PhanMenQuanLiKTX
